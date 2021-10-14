@@ -6,8 +6,8 @@ namespace BasicOOP_Homework_2
     {
         static void Main(string[] args)
         {
-            BankAccount myAccount = new BankAccount();
-            myAccount.RandomNumber();
+            BankAccount myAccount = new BankAccount(123000, AccountType.Savings);
+            myAccount.GetAccountInfo();
         }
     }
 }
