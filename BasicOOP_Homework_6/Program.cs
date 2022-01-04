@@ -6,12 +6,19 @@ namespace BasicOOP_DZ6
     {
         static void Main(string[] args)
         {
-            Moto v = new Moto();
-            Console.WriteLine("Speed: {0}mph", v.Speed);    
-            v.Accelerate(25);
-            Console.WriteLine("Speed: {0}mph", v.Speed);    
-            v.Decelerate(15);
-            Console.WriteLine("Speed: {0}mph", v.Speed);
+            BankAccount firstBA = new BankAccount(100000, AccountType.Current);
+            BankAccount secondBA = new BankAccount(1000000, AccountType.Current);
+            Console.WriteLine($"{firstBA.ToString()}, {secondBA.ToString()}");
+            Console.WriteLine($"{firstBA.Equals(secondBA)}");
+            Console.WriteLine($"{firstBA.GetHashCode()} , {secondBA.GetHashCode()}");
+
+
+
+            //Console.WriteLine(firstBA == secondBA);
+            //Console.WriteLine(firstBA != secondBA);
+
+
+
         }
     }
 }
